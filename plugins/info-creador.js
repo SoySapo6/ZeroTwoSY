@@ -11,7 +11,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
     // VCARD
     let list = [{
         displayName: "zero two OFC",
-        vcard: `BEGIN:VCARD\nVERSION:3.0\nFN: yosue ortega\nitem1.TEL;waid=584242773183:584242773183\nitem1.X-ABLabel:Número\nitem2.EMAIL;type=INTERNE: yosueortega630@gmail.com\nitem2.X-ABLabel:Email\nitem3.URL:https://whatsapp.com/channel/0029VbAXuUtB4hdYWC6m2R1h\nitem3.X-ABLabel:Internet\nitem4.ADR:;; Perú;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`,
+        vcard: `BEGIN:VCARD\nVERSION:3.0\nFN: zero two\nitem1.TEL;waid=584242773183:+51921826291\nitem1.X-ABLabel:Número\nitem2.EMAIL;type=INTERNE: yosueortega630@gmail.com\nitem2.X-ABLabel:Email\nitem3.URL:https://whatsapp.com/channel/0029VbAXuUtB4hdYWC6m2R1h\nitem3.X-ABLabel:Internet\nitem4.ADR:;; Perú;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`,
     }];
 
     await conn.sendMessage(m.chat, {
@@ -25,7 +25,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
                 title: '𝙝𝙤𝙡𝙖 𝙘𝙤𝙢𝙤 𝙚𝙨𝙩𝙖𝙨 𝙨𝙤𝙢𝙤𝙨 𝙡𝙤𝙨 𝙘𝙧𝙚𝙖𝙙𝙤𝙧𝙚𝙨 𝙙𝙚 𝙕𝙚𝙧𝙤 𝙩𝙬𝙤 𝙗𝙤𝙩',
                 body: dev,
                 thumbnailUrl: 'https://d.uguu.se/wrCvoNjp.jpg',
-                sourceUrl: 'https://wa.me/51927238856?text=Vengo+Del+Comando+.owner',
+                sourceUrl: 'https://wa.me/?text=51921826291Vengo+Del+Comando+.owner',
                 mediaType: 1,
                 renderLargerThumbnail: true
             }
@@ -34,7 +34,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
         quoted: m
     });
 
-    let txt = `👋 *Hola como estás😸\`${username}\` este es*\n*el contacto de mi creador*`;
+    let txt = `👋 *Hola como estás😸\`${username}\` este es*\n*el contacto de mi creadores*`;
 
     await conn.sendMessage(m.chat, { text: txt });
 };
