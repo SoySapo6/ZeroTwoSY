@@ -42,8 +42,8 @@ global.sessions = 'zeroSession'
 global.jadi = 'zeroJadiBot' 
 global.yukiJadibts = true // Activado
 global.ch = {
-ch1: '120363387375075395@newsletter',
-ch2: '120363368073378190@newsletter'
+ch1: '120363372883715167@newsletter',
+ch2: '120363372883715167@newsletter'
 }
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
@@ -69,13 +69,13 @@ global.adios = fs.readFileSync('./media/adios.jpg')
 global.catalogo = fs.readFileSync('./media/catalogo.jpg')
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
-global.repobot = 'https://github.com/WillZek/CrowBot-ST'
-global.grupo = 'https://chat.whatsapp.com/B7POPrlJiZf7UWHJKvzVkx'
-global.gteam = 'https://chat.whatsapp.com/EpkR7XS0hrMDYk89yw57HZ'
-global.gsupport = 'https://chat.whatsapp.com/K5GLB5CXp3iAl4XsDzav1W'
-global.comu = 'https://chat.whatsapp.com/Bgfb6Ag13BDCvwzOtldlCm'
-global.channel = 'https://whatsapp.com/channel/0029Vb1AFK6HbFV9kaB3b13W'
-global.insta = 'https://www.instagram.com/crowbot-wa'
+global.repobot = 'https://github.com/SoySapo6/ZeroTwoSY'
+global.grupo = 'https://chat.whatsapp.com/FlTlNh9sdW5LXYXGZIX0vn'
+global.gteam = 'https://chat.whatsapp.com/FlTlNh9sdW5LXYXGZIX0vn'
+global.gsupport = 'https://chat.whatsapp.com/FlTlNh9sdW5LXYXGZIX0vn'
+global.comu = 'https://chat.whatsapp.com/KqkJwla1aq1LgaPiuFFtEY'
+global.channel = 'https://whatsapp.com/channel/0029VayXJte65yD6LQGiRB0R'
+global.insta = 'https://www.instagram.com/'
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
 global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "543876577197-120363317332020195@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: '👑【✫𝚃𝙴𝙰𝙼  乂 𝚂𝚃𝙰𝚁𝙲𝙾𝚁𝙴✫】🎩', orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
