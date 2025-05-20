@@ -1,42 +1,38 @@
-//Codígo creado por Niño Piña wa.me/50557865603
-
 import fs from 'fs';
 import path from 'path';
 
 let handler = async (m, { conn, usedPrefix }) => {
     let who;
 
-    // Verificamos si se menciona a alguien o se cita un mensaje
     if (m.mentionedJid.length > 0) {
-        who = m.mentionedJid[0]; // Si hay mención, usamos esa
+        who = m.mentionedJid[0];
     } else if (m.quoted) {
-        who = m.quoted.sender; // Si se cita un mensaje, usamos el emisor de ese mensaje
+        who = m.quoted.sender;
     } else {
-        who = m.sender; // En caso contrario, usamos el emisor
+        who = m.sender;
     }
 
-    let name = conn.getName(who); // Nombre de la persona mencionada o del emisor
-    let name2 = conn.getName(m.sender); // Nombre del usuario que envía el comando
-    m.react('🌠');
+    let name = conn.getName(who);
+    let name2 = conn.getName(m.sender);
+    m.react('❤️'); // Reacción inspirada en el amor característico de Zero Two
 
-    // Construimos el mensaje dependiendo de si hay una mención o no
+    // Mensajes personalizados con referencias a Zero Two
     let str;
     if (m.mentionedJid.length > 0) {
-        str = `${name2} *Bienvenid@ al grupo* ${name || who} *esperemos la pases bien y que porfavor leas las reglas.`; // Usamos nombre agendado o número si no está agendado*
+        str = `✨ ${name2} *te da la bienvenida con un toque de Zero Two:* "Bienvenido, ${name || who}. ¿Estás listo para ser mi Darling?" ✨`;
     } else if (m.quoted) {
-        str = `${name2} hola ${name || who} *bienvenid@ grupo espero lo pasés muy bien y que lo disfrutes.*`; // Mensaje cuando se cita a otro usuario
+        str = `🌸 ${name2} *saluda a* ${name || who} *con un mensaje estilo Zero Two:* "Espero que lo disfrutes... y que no te olvides de sonreír, como un verdadero compañero de equipo."`;
     } else {
-        str = `${name2} *Hola le doy la bienvenida a todos los nuevos y espero que lean las reglas sin más que decir pueden disfrutar del grupo y divertirse.*`.trim();
+        str = `💖 ${name2} *le da la bienvenida a los nuevos miembros:* "Recuerden disfrutar como si estuvieran en un mundo de emoción y aventura. ¡Lean las reglas y prepárense para lo mejor!"`.trim();
     }
 
     if (m.isGroup) {
-        let pp = 'https://telegra.ph/file/c62071be335ec9e97a0cf.mp4'; 
+        let pp = 'https://telegra.ph/file/zero-two-inspired-video.mp4'; // Puedes usar un video relacionado con Zero Two
 
         const videos = [pp];
         const video = videos[Math.floor(Math.random() * videos.length)];
 
-        // Enviamos el mensaje con el video y el mensaje correspondiente
-        let mentions = [who]; // Mencionamos al usuario que se ha citado o mencionado
+        let mentions = [who];
         conn.sendMessage(m.chat, { video: { url: video }, gifPlayback: true, caption: str, mentions }, { quoted: m });
     }
 }
