@@ -1,4 +1,3 @@
-
 let handler = async (m, { conn, isRowner}) => {
 let _muptime
 let totalreg = Object.keys(global.db.data.users).length
@@ -15,13 +14,13 @@ let muptime = clockString(_muptime)
 const chats = Object.entries(conn.chats).filter(([id, data]) => id && data.isChats)
 const groupsIn = chats.filter(([id]) => id.endsWith('@g.us')) 
 const used = process.memoryUsage()
-let Crow = `╭─⬣「 *Estado De CrowBot* 」⬣\n`
-Crow += `│ 💛 *Creador ∙* WillZek\n`
-Crow += `│ 📚 *Grupos Unidos ∙* ${groupsIn.length}\n`
-Crow += `│ 👤 *Chats Privados ∙* ${chats.length - groupsIn.length}\n`
-Crow += `│ 💬 *Total De Chats ∙* ${chats.length}\n`
-Crow += `│ 💛 *Usuarios Registrados ∙* ${totalreg}\n`
-Crow += `│ 🍭 *Grupos Registrados ∙* ${totalchats}\n`
+let Crow = `╭─⬣「 *Estado De zerotwo* 」⬣\n`
+Crow += `│ 🥰 *Creadores ∙* yosue y maycol`
+Crow += `│ 🔥 *Grupos Unidos ∙* ${groupsIn.length}\n`
+Crow += `│ 😸 *Chats Privados ∙* ${chats.length - groupsIn.length}\n`
+Crow += `│ ❤️ *Total De Chats ∙* ${chats.length}\n`
+Crow += `│ 🤯 *Usuarios Registrados ∙* ${totalreg}\n`
+Crow += `│ 🤔 *Grupos Registrados ∙* ${totalchats}\n`
 Crow += `│ 🕜 *Actividad ∙* ${muptime}\n`
 Crow += `╰─⬣`
 await conn.sendFile(m.chat, pp, 'nino.jpg', Crow, fkontak, null, rcanal)
