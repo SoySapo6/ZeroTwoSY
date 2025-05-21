@@ -1,5 +1,3 @@
-// Código Hecho Por El Staff De StarCore
-
 import { promises } from 'fs'
 import { join } from 'path'
 import { xpRange } from '../lib/levelling.js'
@@ -10,7 +8,7 @@ import fetch from 'node-fetch'
 const { generateWAMessageFromContent, proto } = (await import('@whiskeysockets/baileys')).default
 
 const defaultMenu = {
-  before: `“🕵️¡Hola! *%name*, a qui esta mi menu de busquedas"
+  before: `“🕵️¡Holaaaa soy zerotwo 👋 *%name*, a qui esta mi menu de 💙busquedas❤️"
 
 *─ׄ─ׄ─⭒─ׄ─ׅ─ׄ⭒─ׄ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׅ──ׄ*
 %readmore
@@ -24,7 +22,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 let tags = {
 'buscador': 'Busquedas',
 }
-// let img = 'https://files.catbox.moe/w3s79j.jpg'
+// let img = 'https://qu.ax/nFDbZ.jpg'
 let img = './media/menus/Menu.jpg';
 
   try {
