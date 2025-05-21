@@ -1,5 +1,3 @@
-// Código Hecho Por El Staff De StarCore
-
 import { promises } from 'fs'
 import { join } from 'path'
 import { xpRange } from '../lib/levelling.js'
@@ -10,7 +8,7 @@ import fetch from 'node-fetch'
 const { generateWAMessageFromContent, proto } = (await import('@whiskeysockets/baileys')).default
 
 const defaultMenu = {
-  before: `“💸 ¡Hola! *%name*, a qui esta mi menu de economía"
+  before: `“💸 💙Holaaa soy zerotwo ❤️👋*%name*, a qui esta mi menu de economía"
 
 *─ׄ─ׄ─⭒─ׄ─ׅ─ׄ⭒─ׄ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׅ──ׄ*
 %readmore
@@ -26,7 +24,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 let tags = {
 'rpg': 'MenuEconomia',
 }
-// let img = 'https://files.catbox.moe/w1ltfq.jpg'
+// let img = 'https://qu.ax/PvROL.jpg'
 let img = './media/menus/Menu.jpg';
 
   try {
@@ -244,4 +242,4 @@ function ucapan() {
     res = "Noche 🌙"
   }
   return res
-}
+  }
