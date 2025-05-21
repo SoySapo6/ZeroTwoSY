@@ -84,6 +84,10 @@ global.multiplier = 69
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
+global.api_nightapi = 'https://nightapi-6hbx.onrender.com'
+
+//*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
+
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => {
   unwatchFile(file)
