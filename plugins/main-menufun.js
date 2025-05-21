@@ -1,5 +1,3 @@
-// Código Hecho Por El Staff De StarCore
-
 import { promises } from 'fs'
 import { join } from 'path'
 import { xpRange } from '../lib/levelling.js'
@@ -10,7 +8,7 @@ import fetch from 'node-fetch'
 const { generateWAMessageFromContent, proto } = (await import('@whiskeysockets/baileys')).default
 
 const defaultMenu = {
-  before: `“🎳¡Hola! *%name*, a qui esta mi menu de juegos"
+  before: `“🎳Holaaa soy zero two 👋*%name*, a qui esta mi menu de juegos"
 
 *─ׄ─ׄ─⭒─ׄ─ׅ─ׄ⭒─ׄ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׅ──ׄ*
 %readmore
@@ -24,7 +22,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
 let tags = {
 'fun': 'Diversion',
 }
-// let img = 'https://files.catbox.moe/w3s79j.jpg'
+// let img = 'https://qu.ax/VZlvH.jpg'
 let img = './media/menus/Menu.jpg';
 
   try {
@@ -242,4 +240,4 @@ function ucapan() {
     res = "Noche 🌙"
   }
   return res
-}
+  }
