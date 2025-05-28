@@ -1,5 +1,3 @@
-art(2, '0')).join(':');
-      }
 import fetch from 'node-fetch';
 
 const handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
